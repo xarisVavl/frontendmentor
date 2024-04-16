@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,12 +18,24 @@
       background-color: hsl(212, 45%, 89%);
     }
     p {
-      font-size: 15px;
+  
+      font-family: "Outfit", sans-serif;
+      text-align: center;
+
+    
+      
     }
 
     .par1 {
       color: hsl(218, 44%, 22%);
       font-weight: 700;
+      font-size: 22px;
+    }
+
+    .par2 {
+      color: hsl(220, 15%, 55%);
+      font-weight: 400;
+      font-size: 15px;
     }
     .card {
       background-color: hsl(0, 0%, 100%);
@@ -29,9 +43,10 @@
       margin-top: 200px;
       margin-bottom : 200px;
       width:15%;
-      height: 50vh;
+      height: 60vh;
       border-radius: 20px;
       padding:10px;
+      
 
 
     }
@@ -45,13 +60,13 @@
 
     }
 
-    @media (max-width: 1000px) {
+    @media (max-width: 800px) {
   .card {
     margin: auto;
-      margin-top: 200px;
-      margin-bottom : 200px;
+      margin-top: 150px;
+      margin-bottom : 150px;
       width:80%;
-      height: 100vh;
+      height: 80vh;
      
 
   }
@@ -67,10 +82,13 @@
 <div class="card">
 
   <img src="images\image-qr-code.png" alt="image-qr-code" >
+
  <p class="par1"> Improve your front-end skills by building projects</p>
 
  <p class="par2"> Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p> 
+
 </div>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
