@@ -10,29 +10,55 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+
+    
     body {
       background-color: hsl(212, 45%, 89%);
+    }
+    p {
+      font-size: 15px;
+    }
+
+    .par1 {
+      color: hsl(218, 44%, 22%);
+      font-weight: 700;
     }
     .card {
       background-color: hsl(0, 0%, 100%);
       margin: auto;
       margin-top: 200px;
+      margin-bottom : 200px;
       width:15%;
       height: 50vh;
-      /* padding: 10px; */
-      display: flex;
       border-radius: 20px;
+      padding:10px;
 
 
     }
     img {
       height:55%;
-      width: 90%;
+      width: 95%;
       margin:auto;
-      margin-top: 15px;
+      margin-top: 5px;
       border-radius: 10px;
+      display: block; 
 
     }
+
+    @media (max-width: 1000px) {
+  .card {
+    margin: auto;
+      margin-top: 200px;
+      margin-bottom : 200px;
+      width:80%;
+      height: 100vh;
+     
+
+  }
+    }
+
+
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
@@ -41,9 +67,9 @@
 <div class="card">
 
   <img src="images\image-qr-code.png" alt="image-qr-code" >
- <!-- <p> Improve your front-end skills by building projects
+ <p class="par1"> Improve your front-end skills by building projects</p>
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>  -->
+ <p class="par2"> Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p> 
 </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
